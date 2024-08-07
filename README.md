@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Danh Bạ Nhân Viên
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dự án này là một ứng dụng React đơn giản hiển thị danh sách nhân viên từ một tên miền phụ của Bitrix24. Nó bao gồm các chức năng để làm mới danh sách nhân viên, làm nổi bật một nhân viên được chọn và xem thông tin chi tiết của nhân viên được chọn.
 
-## Available Scripts
+## Bắt Đầu
 
-In the project directory, you can run:
+Các hướng dẫn này sẽ giúp bạn có được một bản sao của dự án và chạy nó trên máy tính của bạn để phát triển và thử nghiệm.
 
-### `npm start`
+### Yêu Cầu
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Đảm bảo rằng bạn đã cài đặt:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js
+- npm
 
-### `npm test`
+### Cài Đặt
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Sao chép kho lưu trữ:
 
-### `npm run build`
+```sh
+git clone <repository-url>
+Điều hướng đến thư mục dự án:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+cd employee-directory
+Cài đặt các phụ thuộc:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+npm install
+Chạy Ứng Dụng
+Để khởi động máy chủ phát triển, chạy:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm start
+Mở http://localhost:3000 để xem nó trong trình duyệt của bạn. Trang sẽ tải lại khi bạn thực hiện các thay đổi. Bạn cũng có thể thấy bất kỳ lỗi lint nào trong bảng điều khiển.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+Lấy danh sách nhân viên từ API Bitrix24.
+Hiển thị danh sách nhân viên.
+Làm mới danh sách nhân viên.
+Làm nổi bật một nhân viên được chọn.
+Xem thông tin chi tiết của nhân viên được chọn.
+Tích Hợp API
+Ứng dụng tích hợp với API Bitrix24 để lấy danh sách nhân viên. Đảm bảo rằng bạn có một tên miền phụ của Bitrix24 và thay thế <subdomain> trong mã với tên miền phụ thực tế của bạn.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Sử Dụng
+Làm Mới Danh Sách Nhân Viên:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Nhấp vào nút "Refresh" để làm mới danh sách nhân viên.
+Làm Nổi Bật Nhân Viên:
 
-### Code Splitting
+Nhấp vào tên của một nhân viên để làm nổi bật nó.
+Xem Thông Tin Chi Tiết Nhân Viên:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Nhấp vào nút "View employee" để mở một hộp thoại với thông tin chi tiết của nhân viên được chọn.
